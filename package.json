@@ -9,7 +9,8 @@
     "bundle:external": "webpack --config ./external/webpack.config.js",
     "bundle:multipoint": "webpack --config ./multi-entry-points/webpack.config.js",
     "bundle:css-loader": "webpack --config ./css-style-loader/webpack.config.js",
-    "bundle:plugins": "webpack --config ./plugins/webpack.config.js"
+    "bundle:plugins": "webpack --config ./plugins/webpack.config.js",
+    "bundle:devserver": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "mini-css-extract-plugin": "0.7.0",
     "style-loader": "0.23.1",
     "webpack": "4.32.2",
-    "webpack-cli": "3.3.2"
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.5.1"
   }
 }
