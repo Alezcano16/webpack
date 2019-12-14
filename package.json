@@ -1,0 +1,36 @@
+{
+  "name": "webpack4",
+  "version": "1.0.0",
+  "description": "curso WebPack",
+  "main": "index.js",
+  "scripts": {
+    "bundle:dist": "webpack --mode production",
+    "bundle:dev": "webpack --entry ./index.js --output ./bundle.js --mode development",
+    "bundle:external": "webpack --config ./external/webpack.config.js",
+    "bundle:multipoint": "webpack --config ./multi-entry-points/webpack.config.js",
+    "bundle:css-loader": "webpack --config ./css-style-loader/webpack.config.js",
+    "bundle:plugins": "webpack --config ./plugins/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alezcano16/webpack.git"
+  },
+  "keywords": [
+    "webpack4-Alex"
+  ],
+  "author": "Alex Lezcano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alezcano16/webpack/issues"
+  },
+  "homepage": "https://github.com/Alezcano16/webpack#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "2.1.1",
+    "html-webpack-plugin": "3.2.0",
+    "mini-css-extract-plugin": "0.7.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2"
+  }
+}
