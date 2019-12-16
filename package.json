@@ -8,9 +8,10 @@
     "bundle:dev": "webpack --entry ./index.js --output ./bundle.js --mode development",
     "bundle:external": "webpack --config ./external/webpack.config.js",
     "bundle:multipoint": "webpack --config ./multi-entry-points/webpack.config.js",
-    "bundle:css-loader": "webpack --config ./css-style-loader/webpack.config.js",
-    "bundle:plugins": "webpack --config ./plugins/webpack.config.js",
-    "bundle:devserver": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js"
+    "build:css-loader": "webpack --config ./css-style-loader/webpack.config.js",
+    "builf:plugins": "webpack --config ./plugins/webpack.config.js",
+    "build:devserver": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
+    "build:babel": "webpack-dev-server --config ./babel/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +26,14 @@
     "url": "https://github.com/Alezcano16/webpack/issues"
   },
   "homepage": "https://github.com/Alezcano16/webpack#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "7.4.5"
+  },
   "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/plugin-transform-runtime": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "babel-loader": "8.0.6",
     "css-loader": "2.1.1",
     "html-webpack-plugin": "3.2.0",
     "mini-css-extract-plugin": "0.7.0",

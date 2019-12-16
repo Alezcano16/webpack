@@ -1,4 +1,7 @@
 import '../css/index.css'
-document.body.innerHTML = '<p>hola Mundo</p>'
+import text from './text'
 
-console.log('Hola mundo desde Webpack - home')
+text();
+if(module.hot){
+    module.hot.accept('./text.js', () =>{text()})
+}
