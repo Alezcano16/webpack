@@ -37,6 +37,7 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new htmlWebpackPlugin({
             title: 'Webpack-dev-server',
+            template: path.resolve(__dirname, 'index.html')
         })
     ]
 }
